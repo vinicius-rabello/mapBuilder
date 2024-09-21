@@ -4,8 +4,8 @@ const bodyParser = require('body-parser');
 const path = require("path");
 
 // importando funções locais
-const { initializeCanvas } = require('./routes/canvasUtils.js');
-const { drawMap } = require('./routes/noiseUtils.js');
+const { initializeCanvas } = require('./canvasUtils.js');
+const { drawMap } = require('./noiseUtils.js');
 
 // initializing express app and setting the port
 const app = express();
