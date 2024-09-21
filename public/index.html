@@ -17,14 +17,14 @@
       <img src="/assets/frame.png" alt="Frame" id="frame">
     </div>
     <div id="div-settings">
-      <label for="scale">Scale: <span id="scaleValue">1</span></label>
+      <label for="scale">Scale: <span id="scaleValue">0.5</span></label>
       <input
         type="range"
         id="scale"
         min="0.1"
-        max="2"
-        step="0.1"
-        value="1"
+        max="1"
+        step="0.05"
+        value="0.5"
         onchange="updateValue('scale')"
       /><br />
 
@@ -65,22 +65,22 @@
         onchange="updateValue('lacunarity')"
       /><br />
 
-      <label for="seed">Seed: <span id="seedValue">2</span></label>
+      <label for="seed">Seed: <span id="seedValue"></span></label>
       <input
         type="number"
         id="seed"
         min="0"
         max="9999999"
         value="0"
-        onchange="updateValue('seed')"
+        onchange="generateNoise()"
       />
 
-      <label for="style">Style: <span id="styleValue">1</span></label>
-      <select id="style" onchange="updateValue('style')">
-        <option value="1">Regular</option>
-        <option value="2">Vulcão</option>
-        <option value="3">Neve</option>
-        <option value="4">Praia</option>
+      <label for="style">Biome: <span id="styleValue"></span></label>
+      <select id="style" onchange="generateNoise()">
+        <option value="1">Overworld</option>
+        <option value="2">Volcano</option>
+        <option value="3">Snow</option>
+        <option value="4">Beach</option>
       </select>
     </div>
   </body>

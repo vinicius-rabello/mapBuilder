@@ -8,12 +8,12 @@ body {
 }
 
 #div-image {
-    width: 80%;
-    background-color: blanchedalmond;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    background-color: blanchedalmond;
 }
 
 #map {
@@ -23,4 +23,14 @@ body {
 #frame {
     position: absolute;
     margin-top: 16px;
+}
+
+#div-settings {
+    flex-grow: 1;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
 }
