@@ -10,7 +10,6 @@ function updateValue(id) {
     const lacunarity = document.getElementById("lacunarity").value;
     const seed = document.getElementById("seed").value;
     const style_num = document.getElementById("style").value;
-  
     fetch(
       `/noise?scale=${scale}&octaves=${octaves}&persistence=${persistence}&lacunarity=${lacunarity}&seed=${seed}&style_num=${style_num}`
     )

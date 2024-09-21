@@ -9,7 +9,7 @@ const { drawMap } = require('./routes/noiseUtils.js');
 
 // initializing express app and setting the port
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // middleware to serve static files
 app.use(express.static(path.join(__dirname, 'public')));
