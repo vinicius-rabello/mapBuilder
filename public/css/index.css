@@ -34,3 +34,31 @@ body {
     justify-content: center;
     background-color: burlywood;
 }
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stack #div-settings below #div-image */
+        width: 100%;
+    }
+
+    #div-image {
+        width: 100%; /* Take full width on mobile */
+        height: auto; /* Let the divs expand based on content */
+    }
+
+    #map {
+        max-width: 256px;
+        max-height: 256px;
+    }
+
+    #frame {
+        max-width: 272px; 
+        max-height: 272px;
+    }
+
+    #div-settings {
+        width: 100%; /* Take full width on mobile */
+        height: auto; /* Let the divs expand based on content */
+    }
+}
