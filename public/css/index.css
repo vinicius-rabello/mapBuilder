@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+#div-image {
+    width: 80%;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#map {
+    position: relative;
+}
+
+#frame {
+    position: absolute;
+    margin-top: 16px;
+}
